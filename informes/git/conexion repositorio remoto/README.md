@@ -5,4 +5,4 @@ los protocolos que se deben tratar en el informe son:
 
 NOTA
 ====
-el paso a paso debe contener snapshots de ayuda con el fin de ver el flujo de configuracion del git en el prose de push sobre el repositorio remoto
+el paso a paso debe contener snapshots de ayuda con el fin de ver el flujo de configuracion del git en el proceso de push sobre el repositorio remoto
