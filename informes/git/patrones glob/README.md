@@ -1,5 +1,5 @@
 1. Realizar una investigacion sobre los patrones glob especificando los patrones utilizados para la construccion del archivo .gitignore en la configuracion de un repositorio de git
-2. adicinalmente hay que realizar 20 ejmplos de patrones glob
+2. adicionalmente hay que realizar 20 ejemplos de patrones glob
 
 NOTA 
 ====
