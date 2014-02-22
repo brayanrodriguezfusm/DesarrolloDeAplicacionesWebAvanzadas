@@ -9,3 +9,4 @@ Contendra los siguientes contenidos:
 2. librerias de referencia construidas por los mismos estudiantes del curso.
 3. practicas de clase o laboratorios generados por los estudiantes.
 4. informes destacados del curso.
+5. publicaion de memorias de talleres y trabajos
