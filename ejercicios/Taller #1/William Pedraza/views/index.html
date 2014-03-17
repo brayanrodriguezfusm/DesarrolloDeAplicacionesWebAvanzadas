@@ -21,7 +21,7 @@
 		div.fec{text-align:center; border: 1px solid black; border-left: 2px solid black; border-top: 2px solid black;}
 		div.col1{text-align:center; border: 1px solid black; border-left: 2px solid black; border-top: 1px dashed black;}
 		div.cel{text-align:left; border: 1px solid black;}
-		div.cel2{border: 1px solid black; margin-top: 7px;}
+		div.cel2{border: 1px solid black; margin-top: 7px; margin-bottom: 10px; border-bottom: 1px dashed black;}
 		div.celda{text-align:left; border: 1px solid black;margin:10px;}
 		div.celda2{text-align:left; border: 1px solid black; margin:10px; border-top:2px solid black;}
 		div.celda3{text-align:left; border: 1px solid black; margin:15px; margin-bottom:25px}
@@ -31,17 +31,26 @@
 		div.celda7{text-align:left; border: 1px solid black; margin:15px; margin-top:6px; margin-bottom:0px;}
 		div.tverde{text-align:center; border: 1px solid black; margin:10px}
 		div.tnormal{text-align:center; border: 1px solid black; margin:5px; margin-top: 15px; margin-bottom: 10px;}
-		div.img{border: 1px solid black; border-bottom: 0px}
+		div.img{border: 1px solid black; border-bottom: 0px; margin: 15px; margin-top: 0px;}
+		div.imagen{text-align: center; border: 1px solid black; margin: 0px; background-image:url("fondo.png"); background-color: beige; height:70px;}
+		div.imagen2{text-align: center; border: 1px solid black; margin: 0px; margin-top: 5px; background-image:url("fondo.png"); background-color: beige; height:70px;}
 		div.col2{border: 1px solid black; border-left: 3px solid black; border-right: 3px solid black;}
 		div.list{border: 1px solid black; border-bottom: 1px dashed black; padding: 5px; padding-bottom:8px; padding-top:8px;}
 		div.search{border: 1px solid black; padding: 5px; padding-bottom:20px; padding-top:0px;}
 		span.celda{text-align:left; border: 1px solid black;margin:10px;}
-		span.tverde{border: 1px solid green; color:green; font-size:17px; font-family: "Times New Roman", Times, serif;}
+		span.tverde{border: 1px solid green; color:green; font-size:20px; font-family: "Times New Roman", Times, serif;}
 		span.tnaranja{border: 1px solid orange; color:orange; font-weight:bold;}
 		span.tnaranja2{border: 1px solid orange; color:orange; border-left: 0px;}
 		span.tnaranja3{border: 1px solid orange; color:black; border-right: 0px;}
+		span.tnaranja4{border: 1px solid orange; color:orange; text-decoration: underline;}
 		span.title{border: 1.5px solid black; font-size:18px; font-family: "Times New Roman", Times, serif; font-weight:bold;}
 		span.fec{border: 1.5px solid black;}
+		span.imagen{text-decoration: underline;}
+		div.job{text-align: center; border: 1px solid black; border-right: 2px solid black; margin-bottom: 3px;}
+		div.info{border: 2px solid black; border-top: 1px solid black;}
+		div.celc{text-align: center; border: 1px solid black;}
+		div.celcn{text-align: center; border: 2px solid orange; font-weight: bold;}
+		div.fin{margin: 10px;}
 	</style>
 	
   </head>
@@ -122,10 +131,20 @@
 		</div>
 	  </div>
 	  <div class="col-md-4">
-		<div class="img">
-			<div> AN EVENT </div>			
-			<div> A BOOK </div>				
-		</div>
+		<div class="cel">
+			<div class="img">
+				<div class="imagen"> 
+					<br>
+					<span class="imagen">AN EVENT APART</span> <br>
+					<span>coming to a city mear you</span>	
+				</div>			
+				<div class="imagen2">  
+					<br>
+					<span class="imagen">A BOOK APART</span> <br>
+					<span>coming soon</span>	
+				</div>				
+			</div>
+		</div>	
 		<div class="col2">
 			<div class="celda6"> EDITOR'S CHOICE </div>			
 			<div class="celda5"> originally ran: may 6, 2008 </div>
@@ -172,18 +191,33 @@
 		<div class="cel2">
 			<div class="tnormal"><span class="celda">Ad via The Deck</span> </div>							
 		</div>
-		<br>
-		<div>
-			<div> JOB BOARD </div>							
-			<div> texto </div>
+		<div class="cel">
+			<div class="job"> JOB BOARD </div>							
+			<div class="info"> 
+				<span class="tnaranja4">Kickball is looking for a</span> <br>
+				<span class="tnaranja4">Frontend engineer for</span> <br>
+				<span class="tnaranja4">Silicon Valley Startup.</span> <br>
+				See more on the <span class="tnaranja4">Job</span> <br>
+				<span class="tnaranja4">Board</span>.
+			</div>
 		</div>	
-		<br>
-		<div>
-			<div> HOSTED BY </div>							
-			<div> (MT) </div>
-			<br>
-			<div> PUBLISHED BY </div>							
-			<div> hanny coe </div>
+		<div class="cel">	
+			<div class="fin">
+				<div class="celc">
+					HOSTED BY 
+				</div>							
+				<div class="celcn"> 
+					(mt) 
+				</div>
+			</div>
+			<div class="fin">
+				<div class="celc">
+					PUBLISHED BY
+				</div>							
+				<div class="celcn"> 
+					<img src="rueda.png" alt="Klematis" width="15" height="15"> hanny coe
+				</div>
+			</div>	
 		</div>
           </div>
 	</div>
