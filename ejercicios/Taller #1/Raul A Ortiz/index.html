@@ -21,10 +21,7 @@
     <script src="js/bootstrap.min.js"></script>
     <style type="text/css">
 		
-    *{
-
-      border: black 1px solid;
-    }
+    
 
     div#one{
       margin-bottom: 10px;
@@ -50,6 +47,16 @@
       margin-bottom: 0px;
       margin-top: 10px;
     }
+	
+	  div#five
+    {
+      margin-bottom: 0px;
+      margin-top: 0px;
+	  margin-right: 0px;
+      margin-left: 0px;
+	  font-size:18px;
+	  border: black 1px solid;
+    }
 
     
     .div1{
@@ -57,6 +64,28 @@
       border-top-style: dashed;
       border-width: 1px;
     }
+	
+	 .div2{
+      border-style: solid;
+      border-width: 1px;
+    }
+	
+	.div3{
+      margin-left: 2px;
+      margin-right: 4px;
+    }
+	
+	.div4{
+      margin-top: 2px;
+      margin-bottom: 2px;
+    }
+	
+	.div5{
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+	
+	
     
     span#one{
       display: inline-block;
@@ -91,38 +120,40 @@
 
     .letra1{
       font-size: 10px;
-
-
+    }
+	
+	.letra2{
+      font-size: 10px;
     }
 		
     </style>
   </head>
   <body>
   <div class="row">
-    <div class="col-md-2">ARTICLES</div>
-    <div class="col-md-2">TOPICS</div>
-    <div class="col-md-2">ABOUT</div>
-    <div class="col-md-2">CONTACT</div>
-    <div class="col-md-2">CONTRIBUTE</div>
-    <div class="col-md-2">FEED</div>
+    <div class="col-md-2 text-center" id="five" ><div class="row" id="five"><span class="div2">ARTICLES</span> <em style="text-align: right">*</em></div></div>
+    <div class="col-md-2 text-center" id="five" ><div class="row" id="five"><span class="div2">TOPICS</span> <em style="text-align: right">*</em></div></div>
+    <div class="col-md-2 text-center" id="five" ><div class="row" id="five"><span class="div2">ABOUT</span> <em style="text-align: right">*</em></div></div>
+    <div class="col-md-2 text-center" id="five" ><div class="row" id="five"><span class="div2">CONTACT</span> <em style="text-align: right">*</em></div></div>
+    <div class="col-md-2 text-center" id="five" ><div class="row" id="five"><span class="div2">CONTRIBUTE</span> <em style="text-align: right">*</em></div></div>
+    <div class="col-md-2 text-center" id="five" ><div class="row" id="five"><span class="div2">FEED</span> <em style="text-align: right">*</em></div></div>
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div class="row" id="one">
-        <div class="col-md-6">
-          1
-          <div class="row">
-            <div class="col-md-12 text-center">
-              1.1
+      <div class="row" >
+        <div class="col-md-6  div2">
+          
+          <div class="row"  >
+            <div class="col-md-12 text-center  div2">
+          
               MAY <span>5,2009</span>
             </div>
           </div>
 
           <div class="row div1"  id="one">
             <div class="col-md-12">
-              1.2
+          
               <div id="two"></div>
-              <div id="two" class="letra">
+              <div id="two" class="letra  div2">
                 Soothe nervous clients with smart communication and planing tools. Tap the hidden intelligence of crowds. Feel better soon.
               </div>
             </div>
@@ -130,16 +161,15 @@
 
           <div class="row div1" id="one">
             <div class="col-md-12">
-              1.3
-              <div class="text-center"  id="two">
+              <div class="text-center div2"  id="two">
                 <span id="one" class="span1">The Wisdowm of Community</span>
               </div>
-              <div class="text-center"  id="two">
+              <div class="text-center  div2"  id="two">
                 <em id="one">by</em> <span class="span2">DEREK POWAZEK</span>
                 <div id="four">
                 </div>
               </div>
-              <div  id="two">
+              <div  id="two" class="div2">
                 Teh wisdom of Crowds (WOC) thery does not mean that people are smart in groups - they are not. Anyone who is seen an angry mod knows it. But crowds, presented with the right challenge and the right inteface, can be wise. when it works, the crowd is wiser, in fact, than any single participant.
               </div>
             </div>
@@ -147,53 +177,54 @@
 
           <div class="row div1" id="one">
             <div class="col-md-12">
-              <div  id="two" class="text-center">
+              <div  id="two" class="text-center  div2">
                 <span class="span1" id="one">Taking the Guesswork Out of</span>
               </br>
                 <span class="span1" id="one">Desing</span>
               </div>
-              <div class="text-center"  id="two">
-                <em id="one">by</em> <span  class="span2">DANIEL RITZENTHALER</span>
+              <div class="text-center div2"  id="two">
+                <em id="one">by</em> <span class="span2">DANIEL RITZENTHALER</span>
                 <div id="four">
                 </div>
               </div>
-              <div id="two">
+              <div id="two" class="div2">
                 Teh wisdom of Crowds (WOC) thery does not mean that people are smart in groups - they are not. Anyone who is seen an angry mod knows it. But crowds, presented with the right challenge and the right inteface, can be wise. when it works, the crowd is wiser, in fact, than any single participant.
               </div>
             </div>
           </div>  
         </div>
 
-        <div class="col-md-4">
-          2
-          <div class="row">
-            <div class="col-md-12 text-center" id="three">
-              <div>
-                  <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+        <div class="col-md-4  div2">
+          <div class="row div2">
+            <div class="col-md-12 text-center " id="three">
+              <div >
+                  <img src="1.jpg" alt="Smiley face" height="42" width="295">
               </div>
-              <div>
-                 <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+              <div  >
+                 <img src="2.jpg" alt="Smiley face" height="42" width="295">
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row div2">
             <div class="col-md-12">
-              <div id="three" class="text-center">
+			</br>
+				<div class="div2">
                     E D I T O R ' S C H O I C E
-                    <h1></h1> 
+                </div>
+				<div class="div2">
                     <em>originally ran: May 6, 2008</em>
                 </div>
-                <div class="text-left" id="three">
+                <div class="text-left  div2" id="three">
                     <span class="span1" id="one">Community: From</span> 
                   </br>
                     <span class="span1" id="one">Litte things, Big</span>
                   </br>
                     <span class="span1" id="one">Things Grow</span>
                 </div>
-                <div>
+                <div class="div2">
                     <em id="one">by</em> <span class="span2">GEORGE OATES</span>
                 </div>
-                <div id="three">
+                <div id="three" class="div2">
                     q. what technology do you need to build the next fickr? a. trick questio, what you
                     need to buid the next flickr is people. george oates, a key member of the core team
                     that shaped the flickr community, shares lessons that can help you grow yours.
@@ -204,81 +235,89 @@
 
         </div>
 
-        
-        <div class="col-md-2">
-          3
-          <div class="row">
-            <div class="col-md-12">
+        <div class="col-md-2 div2">
+          <div class="row div2">
+            <div class="col-md-12 div3 div2">
               <div class="row">
-                <div class="col-md-12">
-                  <p>Search ALA</p>
-                </div>
+                  <p class="div2  div4">Search ALA</p>
               </div>
-              <div class="row">
-                <div class="col-md-9">
+              <div class="row div2">
+                <div class="col-md-9 div2" >
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 div2 text-center">
                   GO
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 div2">
                 <input type="checkbox" name="vehicle" value="Car">
                 <em class="letra1">include discussions</em>
                 </div>
               </div>
-              <div class="row">
-
-                <div class="col-md-12">
-                <div class="text-center">
-                  <span>Topics</span>
-                </div>
-                <p id="one"><span class="span2"> Code</span></p>
-                <p id="one"><span class="span2">Content</span></p>
-                <p id="one"><span class="span2">Culture</span></p>
-                <p id="one"><span class="span2">Design</span></p>
-                <p id="one"><span class="span2">Process</span></p>
-                <p id="one"><span class="span2">User Science</span></p>
-                </div>
-              </div>
+			  </br>
             </div>
           </div>
-
-          <div class="row" id="three">
+		  <div class="row div5 div2">
+			<div class="col-md-12 div3">
+				<div class="row div2">
+					<span>Topics</span>
+				</div>
+				<div class="row div2">
+					<span class="span2">*  Code</span>
+				</div>
+				<div class="row div2">
+					<span class="span2">*  Content</span>
+				</div>
+				<div class="row div2">
+					<span class="span2">*  Culture</span>
+				</div>
+				<div class="row div2">
+					<span class="span2">*  Design</span>
+				</div>
+				<div class="row div2">
+					<span class="span2">*  Process</span>
+				</div>
+				<div class="row div2">
+					<span class="span2">*  User Science</span>
+				</div>
+			</div>
+		  </div>
+		  
+          <div class="row  div5 div2" id="three">
             <div class="col-md-12">
-            <div class="text-center" id="three">
-              <span class="letra1">Ad via The Deck</span>
-            </div>
+				<div class="text-center div2 " id="three">
+				  <span class="letra1 div2">Ad via The Deck</span>
+				</div>
             </div>
           </div>
-
-          <div class="row"  id="three">
+		<div class="div2">
+          <div class="row">
             <div class="col-md-12">
-              <div>
+              <div class="text-center div2 div4">
                  J O B  B O A R D
               </div>
-              <div>
-                <span  class="span2">kickball is looking for s</span>
-                <span  class="span2">frontend enginner for</span>
-                <span  class="span2">Silicon valley startup.</span>
-                See more on the <em  class="span2">Job Board</em>
+              <div class="div2">
+                <span  class="span2 letra2">kickball is looking for s</span></br>
+                <span  class="span2 letra2">frontend enginner for</span></br>
+                <span  class="span2 letra2">Silicon valley startup.</span></br>
+                <em class="letra2">See more on the</em> <em  class="span2">Job Board</em>
               </div>
-              <div id="three">
+              <div id="three" class="text-center div2">
                 HOSTED BY
-                <div>
-                  <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+                <div  class="div2">
+                  <img src="3.jpg" alt="Smiley face" height="42" width="125">
 
                 </div>
               </div>
-              <div>
+              <div class="text-center div2">
                 PUBLISHED BY
-                <div>
-                  <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+                <div class="div2">
+                  <img src="3.jpg" alt="Smiley face" height="42" width="125">
                 </div>
               </div>
-
             </div>
           </div>
+		  </div>
 
         </div>
 
