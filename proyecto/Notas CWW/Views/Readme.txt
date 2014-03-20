@@ -1,0 +1,1 @@
+esta carpeta es para agregar la codificación de las vistas
