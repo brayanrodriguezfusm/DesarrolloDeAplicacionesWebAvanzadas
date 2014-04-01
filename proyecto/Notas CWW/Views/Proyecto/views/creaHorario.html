@@ -54,6 +54,11 @@
 		div.imgTitle{text-align: center; border: 1px solid black; margin: 0px; background-image:url("ingenieria.png"); background-color: blue; height:100px;}
 		div.Title{text-align: center; margin-bottom: 30px; border-bottom: 2px solid gray; font-size:25px; font-family: "Times New Roman", Times, serif; font-weight:bold;}
 		span.Tnegrilla{font-weight:bold;}
+		table{border: 1px solid black;}
+		tr{border: 1px solid black;}
+		td{border: 1px solid black;}
+		th{border: 1px solid black;}
+		th.espec{border: 1px solid black; background-color: aqua;}
 		
 	</style>
 
@@ -74,7 +79,7 @@
 
 	<div class="row">
 	  <div class="col-md-12">
-			<div class="Title"> Trabajar Con Horario de Clases </div>
+			<div class="Title"> Creacion de Horario </div>
 	  </div>
 	</div>
 
@@ -90,11 +95,8 @@
 		<div>
 			 <div> <span class="Tnegrilla">Estudiante:</span> xxxxxxxxxxxxxxxxxxxx </div> 				
 			 <div> <span class="Tnegrilla">Codigo:</span> xxxxxx </div> 			 
-			 <div> <span class="Tnegrilla">Programa:</span> xxxxxxxxxxxx </div> 
 			 <div> <span class="Tnegrilla">Semestre:</span> xx </div> 
-			 <div> <span class="Tnegrilla">Email:</span> xxxxxxxx@ingenieria.sanmartin.edu.co </div> 
 			 <div> <span class="Tnegrilla">Promedio:</span> x.xx </div> 
-			 <div> <span class="Tnegrilla">Jornada:</span> xxxxxx </div> 
 		</div>		
 	  </div>
 	  <div class="col-md-4">
@@ -109,27 +111,176 @@
 	<div class="container">
 
 	<div class="row">
+
 	  <div class="col-md-2">
+	  </div>	
+	  <div class="col-md-3">
+
+		<table summary="Descripción de la tabla y su contenido">
+			<caption></caption>
+			<thead>
+				<tr>
+					<th scope="col" class="espec">Codigo</th>
+					<th scope="col" class="espec">Materia</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>NA10568</td>
+					<td>PROGRAMACION</td>
+				</tr>
+				<tr>
+					<td>DA10000</td>
+					<td>CALCULO III</td>
+				</tr>
+			</tbody>
+		</table>	  
+	  
 	  </div>
 	  <div class="col-md-2">
-			<div> <img src="CONSULTAR.jpg"></img> <a href="horarioClase.html">Consultar Horario</a> </div>
-	  </div>
-	  <div class="col-md-2">
-			<div> <img src="modi.jpg"></img> <a href="creaHorario.html">Crear Horario</a> </div>
-	  </div>
-	  <div class="col-md-2">
-			<div> <img src="crear horario.jpg"></img> <a href="creaHorario.html">Modificar Horario</a> </div>
+			<div> <img src="AGREGAR.jpg"></img> </div>
+			<div> <img src="QUITAR.jpg"></img> </div>
 	  </div>	  
-	  <div class="col-md-2">
-			<div> <img src="SALIR.jpg"></img> <a href="menu.html">Salir</a> </div>
-	  </div>	  	  
-	  <div class="col-md-2">
+	  <div class="col-md-3">
+			
+		<table summary="Descripción de la tabla y su contenido">
+			<caption></caption>
+			<thead>
+				<tr>
+					<th scope="col" class="espec">Codigo</th>
+					<th scope="col" class="espec">Materia</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>NA10568</td>
+					<td>PROGRAMACION</td>
+				</tr>
+			</tbody>
+		</table>	  		
+			
 	  </div>
+	  <div class="col-md-2">
+	  </div>	  
 	  
 	</div>
 
 	</div>
 
+	<br>
+	
+	<div class="container">
+
+	<div class="row">
+	
+	  <div class="col-md-1">
+	  </div>	
+	  <div class="col-md-2">
+		<img src="disponible.jpg"></img> <a href="url">Disponibilidad Curso</a>
+	  </div>
+	  <div class="col-md-6">
+	  
+		<table summary="Descripción de la tabla y su contenido">
+			<caption></caption>
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col" class="especial">Lunes</th>
+					<th scope="col" class="especial">Martes</th>
+					<th scope="col" class="especial">Miercoles</th>
+					<th scope="col" class="especial">Jueves</th>
+					<th scope="col" class="especial">Viernes</th>
+					<th scope="col" class="especial">Sabado</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row" class="especial">7:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">8:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">10:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">11:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">13:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">18:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">20:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row" class="especial">21:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>	  
+	  
+	  </div>
+	  <div class="col-md-2">
+		<div> <img src="GUARDAR PEQ.jpg"></img> </div>
+		<div> <img src="atras.jpg"></img> <a href="horario.html">salir</a>	</div>
+	  </div>
+	  <div class="col-md-1">
+	  </div>	  
+	
+	</div>
+	
+	</div>
+	
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
