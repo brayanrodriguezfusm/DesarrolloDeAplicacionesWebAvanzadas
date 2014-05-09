@@ -27,6 +27,8 @@
   </head>
   <body>
   
+	<br>
+  
 	<div class="navbar-wrapper">
       <div class="container">
 		
@@ -47,11 +49,12 @@
 				</div>
 				<div class="navbar-collapse collapse">
 				  <ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="index.html">Inicio</a></li>
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
 					  <ul class="dropdown-menu">
-						<li><a href="#">Horarios</a></li>
+						<li><a href="horario.html">Horario</a></li>
+						<li><a href="notas.html">Historico de Notas</a></li>
 					  </ul>
 					</li>
 					<li class="dropdown">
@@ -59,8 +62,18 @@
 					  <ul class="dropdown-menu">
 						<li><a href="cursos.html">Cursos</a></li>
 						<li><a href="#">Horaios</a></li>
+						<li><a href="#">Profesores</a></li>
 					  </ul>
 					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informacion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="turno.html">Turno</a></li>
+						<li><a href="reglas.html">Reglas</a></li>
+						<li><a href="#">Electivas</a></li>
+					  </ul>
+					</li>
+					<li><a href="login.html">Salir</a></li>
 				  </ul>
 				</div>
 			  </div>
@@ -95,6 +108,12 @@
 	<div class="row">
 	
 		<div class="col-md-3">
+			
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Formulario</h3>
+				</div>
+			</div>
 		
 			<div class="form-group"> 
 				<input type="text" class="form-control" placeholder="Codigo materia" id="codMat">
@@ -143,6 +162,13 @@
 		
 		<div class="col-md-6">
 		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Listado de Materias</h3>
+				</div>
+			</div>
+			
+		
 			<table class="table">
 				<thead>
 				  <tr>
@@ -173,6 +199,13 @@
 		</div>
 
 		<div class="col-md-3">
+		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Ajustes</h3>
+				</div>
+			</div>
+		
 			<button type="button" class="btn btn-danger" id="botonEliminar">
 				<span class="glyphicon glyphicon-thumbs-down"></span> Eliminar
 			</button>
@@ -240,8 +273,6 @@
 	$('#edita').hide();
 	$('#botonActualizar').hide();
 	$('#botonCancelar').hide();
-	
-	alert("llego");
 	
 	$('#dia li a').on('click', function(){
 		var dia = $(this).text();

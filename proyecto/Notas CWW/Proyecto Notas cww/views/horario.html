@@ -27,6 +27,8 @@
   </head>
   <body>
   
+	<br>
+  
 	<div class="navbar-wrapper">
       <div class="container">
 		
@@ -47,11 +49,12 @@
 				</div>
 				<div class="navbar-collapse collapse">
 				  <ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="index.html">Inicio</a></li>
 					<li class="dropdown">
 					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
 					  <ul class="dropdown-menu">
-						<li><a href="#">Horarios</a></li>
+						<li><a href="horario.html">Horario</a></li>
+						<li><a href="notas.html">Historico de Notas</a></li>
 					  </ul>
 					</li>
 					<li class="dropdown">
@@ -59,8 +62,18 @@
 					  <ul class="dropdown-menu">
 						<li><a href="cursos.html">Cursos</a></li>
 						<li><a href="#">Horaios</a></li>
+						<li><a href="#">Profesores</a></li>
 					  </ul>
 					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informacion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="turno.html">Turno</a></li>
+						<li><a href="reglas.html">Reglas</a></li>
+						<li><a href="#">Electivas</a></li>
+					  </ul>
+					</li>
+					<li><a href="login.html">Salir</a></li>
 				  </ul>
 				</div>
 			  </div>
@@ -94,65 +107,27 @@
 	
 	<div class="row">
 	
-		<div class="col-md-3">
-		
-			<div class="form-group"> 
-				<input type="text" class="form-control" placeholder="Codigo materia" id="codMat">
-				<input type="text" class="form-control" placeholder="Nombre materia" id="nomMat">
-				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="diaOK">
-					Dia <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu" id="dia">
-					<li><a href="#">Dia</a></li>
-					<li role="presentation" class="divider"></li>
-					<li><a href="#">Lunes</a></li>
-					<li><a href="#">Martes</a></li>
-					<li><a href="#">Miercoles</a></li>
-					<li><a href="#">Jueves</a></li>
-					<li><a href="#">Viernes</a></li>
-					<li><a href="#">Sabado</a></li>
-				  </ul>
-				</div>
-				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="horaOK">
-					Hora <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu" id="hora">
-					<li><a href="#">Hora</a></li>
-					<li role="presentation" class="divider"></li>
-					<li><a href="#">7:00</a></li>
-					<li><a href="#">8:30</a></li>
-					<li><a href="#">10:00</a></li>
-					<li><a href="#">11:30</a></li>
-					<li><a href="#">13:30</a></li>
-					<li><a href="#">15:00</a></li>
-					<li><a href="#">16:30</a></li>
-					<li><a href="#">18:30</a></li>
-					<li><a href="#">20:00</a></li>
-				  </ul>
-				</div>
-				<input type="text" class="form-control" placeholder="Salon" id="salonMat">
-				<input type="text" class="form-control" placeholder="Docente" id="docMat">
-			</div>
-			<button type="button" class="btn btn-primary" id="botonCrear">
-				<span class="glyphicon glyphicon-thumbs-up"></span> Crear
-			</button>
-		
+		<div class="col-md-2">		
 		</div>
 		
-		<div class="col-md-6">
+		<div class="col-md-8">
+		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Horario de Clase</h3>
+				</div>
+			</div>
 		
 			<table class="table">
 				<thead>
 				  <tr>
-					<th>#</th>
-					<th>Codigo</th>
-					<th>Curso</th>
-					<th>Dia</th>
-					<th>Hora</th>
-					<th>Salon</th>
-					<th>Docente</th>
+					<th></th>
+					<th>Lunes</th>
+					<th>Martes</th>
+					<th>Miercoles</th>
+					<th>Jueves</th>
+					<th>Viernes</th>
+					<th>Sabado</th>
 				  </tr>
 				</thead>
 				<tbody id="tablaMat">
@@ -167,65 +142,126 @@
 					<!-- <td>@mdo</td> -->
 				  <!-- </tr> -->
 				  
+				  <tr>
+					<th>7:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						NA20058 <br>
+						Servicios y tecnologías para IT <br>
+						1-404
+					</td>
+				  </tr>
+				  <tr>
+					<th>8:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>
+						NA20058 <br>
+						Servicios y tecnologías para IT <br>
+						1-404
+					</td>
+				  </tr>
+				  <tr>
+					<th>10:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th>11:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th>13:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th>15:00</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th>16:30</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th>18:30</th>
+					<td></td>
+					<td>
+						NA01076 <br>
+						Sistemas Operacionales <br>
+						Quimbaya
+					</td>
+					<td>
+						NA20063 <br>
+						Aplicaciones Web Avanzadas <br>
+						Quimbaya
+					</td>
+					<td>
+						NA01076 <br>
+						Sistemas Operacionales <br>
+						Quimbaya
+					</td>
+					<td>
+						NA20063 <br>
+						Aplicaciones Web Avanzadas <br>
+						Quimbaya
+					</td>
+					<td></td>
+				  </tr>
+				  <tr>
+					<th>20:00</th>
+					<td></td>
+					<td>
+						NA05073 <br>
+						Compiladores <br>
+						Tayrona
+					</td>
+					<td></td>
+					<td>
+						NA05073 <br>
+						Compiladores <br>
+						Tayrona
+					</td>
+					<td></td>
+					<td></td>
+				  </tr>
+				  
 				</tbody>
 			</table>
 		
 		</div>
 
-		<div class="col-md-3">
-			<button type="button" class="btn btn-danger" id="botonEliminar">
-				<span class="glyphicon glyphicon-thumbs-down"></span> Eliminar
-			</button>
-			<button type="button" class="btn btn-info" id="botonModificar">
-				<span class="glyphicon glyphicon-wrench"></span> Modificar
-			</button>
-			
-			<div class="form-group" id="edita"> 
-				<input type="text" class="form-control" placeholder="Codigo materia" id="codMat2">
-				<input type="text" class="form-control" placeholder="Nombre materia" id="nomMat2">
-				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="diaOK2">
-					Dia <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu" id="dia2">
-					<li><a href="#">Dia</a></li>
-					<li role="presentation" class="divider"></li>
-					<li><a href="#">Lunes</a></li>
-					<li><a href="#">Martes</a></li>
-					<li><a href="#">Miercoles</a></li>
-					<li><a href="#">Jueves</a></li>
-					<li><a href="#">Viernes</a></li>
-					<li><a href="#">Sabado</a></li>
-				  </ul>
-				</div>
-				<div class="btn-group">
-				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="horaOK2">
-					Hora <span class="caret"></span>
-				  </button>
-				  <ul class="dropdown-menu" role="menu" id="hora2">
-					<li><a href="#">Hora</a></li>
-					<li role="presentation" class="divider"></li>
-					<li><a href="#">7:00</a></li>
-					<li><a href="#">8:30</a></li>
-					<li><a href="#">10:00</a></li>
-					<li><a href="#">11:30</a></li>
-					<li><a href="#">13:30</a></li>
-					<li><a href="#">15:00</a></li>
-					<li><a href="#">16:30</a></li>
-					<li><a href="#">18:30</a></li>
-					<li><a href="#">20:00</a></li>
-				  </ul>
-				</div>
-				<input type="text" class="form-control" placeholder="Salon" id="salonMat2">
-				<input type="text" class="form-control" placeholder="Docente" id="docMat2">
-				
-			</div>
-			<button type="button" class="btn btn-default" id="botonActualizar">
-				<span class="glyphicon glyphicon-ok"></span> Aplicar
-			</button>		
-			<button type="button" class="btn btn-default" id="botonCancelar">
-				<span class="glyphicon glyphicon-remove"></span> Cancelar
-			</button>
+		<div class="col-md-2">
 			
 		</div>		
 	
@@ -240,8 +276,6 @@
 	$('#edita').hide();
 	$('#botonActualizar').hide();
 	$('#botonCancelar').hide();
-	
-	alert("llego");
 	
 	$('#dia li a').on('click', function(){
 		var dia = $(this).text();
