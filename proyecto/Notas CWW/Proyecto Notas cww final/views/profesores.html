@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+		div.color{font-family: "Times New Roman", Times, serif; color:white;}
+		span.Tnegrilla{font-weight:bold;}
+		#botonActualizar{margin-left: 900px}
+		#botonCancelar{margin-left: 900px}
+		
+	</style>
+	<script language="javascript" type="text/javascript">
+
+	function Solo_Numerico(variable){
+        Numer=parseInt(variable);
+        if (isNaN(Numer)){
+            alert("Debe ingresar números");
+			return "";
+        }
+		
+		if (Numer > 999999999999){
+		   
+			return "";
+		}
+
+		
+        return Numer;
+    }
+    function ValNumero(Control){
+        Control.value=Solo_Numerico(Control.value);
+    }
+
+
+
+
+	</script>
+	<script src="../js/jquery-1.11.0.min.js" ></script> 
+	
+  </head>
+<body>
+  
+	<br>
+  
+	<div class="navbar-wrapper">
+      <div class="container">
+		
+		<div class="col-md-9">
+		
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			  <div class="container">
+				<div class="navbar-header">
+				<br>
+				<img src="logoU.jpg"></img>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="">Notas CWW</a>
+				</div>
+				<div class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="horario.html">Horario</a></li>
+						<li><a href="notas.html">Historico de Notas</a></li>
+						<li><a href="listadocursos.html#">Listado de cursos</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="cursos.html">Cursos</a></li>
+						<li><a href="#">Horaios</a></li>
+						<li><a href="#">Profesores</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informacion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+					  	<li><a href="informacion.html">Información</a></li>
+						<li><a href="turno.html">Turno</a></li>
+						<li><a href="reglas.html">Reglas</a></li>
+						<li><a href="electivas.html">Electivas</a></li>
+					  </ul>
+					</li>
+					<li><a href="login.html">Salir</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			
+		</div>
+		<div class="col-md-3">
+		
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<br>
+						<div class="color"> <span class="Tnegrilla">Estudiante:</span> xxxxxxxxxxxxxxxxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Codigo:</span> xxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Programa:</span> xxxxxxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Jornada:</span> xxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Promedio:</span> x.xx </div>
+						<br>		
+					</div>
+				</div>	
+			</div>
+		
+		</div>		
+
+      </div>
+	  
+	  <br>	
+	<div class="container">
+	
+	<div class="row">
+	
+		<div class="col-md-3">
+			
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Formulario</h3>
+				</div>
+			</div>
+		
+			<div class="form-group"> 
+				<input type="text" class="form-control" placeholder="Nombre docente" id="nomdoc">
+				<input type="text" class="form-control" placeholder="Identificación Docente" id="idedoc" required autofocus onkeyup = "return ValNumero(this);">
+				<input type="text" class="form-control" placeholder="Celular" id="celdoc" required autofocus onkeyup = "return ValNumero(this);">
+				<br>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="jornadaOK">
+					Jornada <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" id="jornada">
+					<li><a href="#">Jornada</a></li>
+					<li role="presentation" class="divider"></li>
+					<li><a href="#">Mañana</a></li>
+					<li><a href="#">Noche</a></li>
+					<li><a href="#">Completa</a></li>
+				  </ul>
+				</div>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="matdocOK">
+					Materia <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" id="matdoc">
+					<li><a href="#">Materia</a></li>
+					<li role="presentation" class="divider"></li>
+					<li><a href="#">Prolog</a></li>
+					<li><a href="#">Programación</a></li>
+					<li><a href="#">Calculo</a></li>
+					<li><a href="#">Catedra san martiniana</a></li>
+					<li><a href="#">fisica</a></li>
+					<li><a href="#">Calculo II</a></li>
+				  </ul>
+				</div>
+			</div>
+			<button type="button" class="btn btn-primary" id="botonCrear">
+				<span class="glyphicon glyphicon-ok"></span> Crear
+			</button>
+		
+		</div>
+		
+		<div class="col-md-6">
+		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Listado de Docentes	</h3>
+				</div>
+			</div>
+			
+		
+			<table class="table">
+				<thead>
+				  <tr>
+				  	<th>##</th>
+					<th>Nombre</th>
+					<th>Celular</th>
+					<th>Materia</th>
+					<th>Jornada</th>
+				  </tr>
+				</thead>
+				<tbody id="tablaMat">
+				  
+				  <!-- <tr> -->
+					<!-- <td>1</td> -->
+					<!-- <td>Mark</td> -->
+					<!-- <td>Otto</td> -->
+					<!-- <td>@mdo</td> -->
+					<!-- <td>@mdo</td> -->
+					<!-- <td>@mdo</td> -->
+					<!-- <td>@mdo</td> -->
+				  <!-- </tr> -->
+				  
+				</tbody>
+			</table>
+		
+		</div>
+
+		<div class="col-md-3">
+		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Ajustes</h3>
+				</div>
+			</div>
+		
+			<button type="button" class="btn btn-danger" id="botonEliminar">
+				<span class="glyphicon glyphicon-trash"></span> Eliminar
+			</button>
+			<button type="button" class="btn btn-info" id="botonModificar">
+				<span class="glyphicon glyphicon-pencil"></span> Modificar
+			</button>
+			
+			<div class="form-group" id="edita"> 
+				<input type="text" class="form-control" placeholder="Nombre docente" id="nomdoc2">
+				<input type="text" class="form-control" placeholder="Celular" id="celdoc2" required autofocus onkeyup = "return ValNumero(this);">
+				<br>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="jornada2OK">
+					Jornada <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" id="jornada2">
+					<li><a href="#">Jornada</a></li>
+					<li role="presentation" class="divider"></li>
+					<li><a href="#">Mañana</a></li>
+					<li><a href="#">Noche</a></li>
+					<li><a href="#">Completa</a></li>
+				  </ul>
+				</div>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="matdoc2OK">
+					Materia <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" id="matdoc2">
+					<li><a href="#">Materia</a></li>
+					<li role="presentation" class="divider"></li>
+					<li><a href="#">Prolog</a></li>
+					<li><a href="#">Programación</a></li>
+					<li><a href="#">Calculo</a></li>
+					<li><a href="#">Catedra san martiniana</a></li>
+					<li><a href="#">fisica</a></li>
+					<li><a href="#">Calculo II</a></li>
+				  </ul>
+				</div>
+			</div>
+			</div>
+			<button type="button" class="btn btn-default" id="botonActualizar">
+				<span class="glyphicon glyphicon-ok"></span> Aplicar
+			</button>		
+			<button type="button" class="btn btn-default" id="botonCancelar">
+				<span class="glyphicon glyphicon-remove"></span> Cancelar
+			</button>
+			
+		</div>		
+	
+	</div>
+	
+	</div>
+	
+	<script>
+	
+	 
+	var consec = 0;
+	
+	$('#edita').hide();
+	$('#botonActualizar').hide();
+	$('#botonCancelar').hide();
+	
+	$('#matdoc li a').on('click', function(){
+		var mat = $(this).text();
+		$('#matdocOK').text(mat);
+		$('#matdocOK').append(' <span class="caret"></span>');
+	});
+
+	$('#jornada li a').on('click', function(){
+		var jornada = $(this).text();
+		$('#jornadaOK').text(jornada);
+		$('#jornadaOK').append(' <span class="caret"></span>');
+	});
+	
+		
+//modificaciones 
+
+	$('#matdoc2 li a').on('click', function(){
+		var mat2 = $(this).text();
+		$('#matdoc2OK').text(mat2);
+		$('#matdoc2OK').append(' <span class="caret"></span>');
+	});
+	
+	$('#jornada2 li a').on('click', function(){
+		var jornada2 = $(this).text();
+		$('#jornada2OK').text(jornada2);
+		$('#jornada2OK').append(' <span class="caret"></span>');
+	});
+	
+	$('#botonCrear').on('click', function(){
+		var nombredoc = $('#nomdoc').val();
+		var identif = $('#idedoc').val();
+		var celu = $('#celdoc').val();
+		var jornada = $('#jornadaOK').text();
+		var mater =  $('#matdocOK').text();
+		
+		
+		
+		if( nombredoc == null || nombredoc.length == 0 ) {
+			alert('El nombre del docente es requerido');
+			return false;
+		}
+		
+		if( identif == null || identif.length == 0 ) {
+			alert('La identificación es requerido');
+			return false;
+		}
+
+		if( celu == null || celu.length == 0 ) {
+			alert('El número del Celular es requerido');
+			return false;
+		}
+
+		
+		if( jornada == null || jornada.length == 0 || ($.trim(jornada) == 'Jornada')) {
+			alert('La jornada es requerida');
+			return false;
+		}
+
+		if( mater == null || mater.length == 0 || ($.trim(mater) == 'Materia')) {
+			alert('La materia es requerida');
+			return false;
+		}
+		
+		consec = consec+1;		
+		
+		$('#tablaMat').append('<tr>	 <td> <input type="checkbox" id="'+consec+'"> '+consec+' </td> <td>'+nombredoc+' </td> <td>'+celu+'</td> <td>'+mater+'</td> <td>'+jornada+'</td>  </tr>')
+
+		$('#nomdoc').val("");
+		$('#idedoc').val("");
+		$('#celdoc').val("");
+		$('#matdocOK').text("Materia");
+		$('#matdocOK').append(' <span class="caret"></span>');
+		$('#jornadaOK').text("Jornada");
+		$('#jornadaOK').append(' <span class="caret"></span>');
+	
+		
+	});
+	
+	
+	$('#botonEliminar').on('click', function(){
+	
+		$('#tablaMat input:checked').each(function() {
+			//$(this) es el checkbox correspondiente
+			$(this).parent().parent().remove();
+		});
+		
+	});
+	
+	$('#botonModificar').on('click', function(){
+	
+		//variables	
+		var cont = 0;
+		var nombredoc2 = '';
+		var celu2 =  '';
+		var jornada2 =  '';
+		var mater2 = '';
+		
+		
+		$('#tablaMat input:checked').each(function() {
+			//$(this) es el checkbox correspondiente
+			cont = cont+1;
+			
+			nombredoc2 = $(this).parent().next().text();
+			//identif2 = $(this).parent().next().next().text();
+			celu2 = $(this).parent().next().next().text();
+			mater2 = $(this).parent().next().next().next().text();
+			jornada2 = $(this).parent().next().next().next().next().text();
+			
+			
+		});
+		
+		if (cont > 1) {
+			alert('Debe seleccionar solo uno');
+			return false;
+		}
+		
+		if (cont == 0) {
+			alert('No marco ningun checkbox!');
+			return false;
+		}		
+		
+		//llenar todos los datos
+		
+		$('#nomdoc2').val(nombredoc2);
+		//$('#idedoc2').val(identif2);
+		$('#celdoc2').val(celu2);
+		$('#jornada2OK').text(jornada2);
+		$('#jornada2OK').append(' <span class="caret"></span>');
+		$('#matdoc2OK').text(mater2);
+		$('#matdoc2OK').append(' <span class="caret"></span>');
+		
+		
+		$('#edita').show();
+		$('#botonActualizar').show();
+		$('#botonCancelar').show();
+		
+	});
+	
+	$('#botonActualizar').on('click', function(){
+		
+		var ide3 = 0;
+		
+		var nombredoc3 = '';
+		//var identif3 = '';
+		var celu3 =  '';
+		var jornadas3 =  '';
+		var mater3 = '';
+		
+		nombredoc3 = $('#nomdoc2').val();
+		//identif3 = $('#idedoc2').val();
+		celu3 = $('#celdoc2').val();
+		jornadas3 =  $('#jornada2OK').text();
+		mater3 =  $('#matdoc2OK').text();
+		
+		
+		$('#tablaMat input:checked').each(function() {
+			//$(this) es el checkbox correspondiente
+			ide3 = $(this).attr("id");			
+		});
+		
+		if( nombredoc3 == null || nombredoc3.length == 0 ) {
+			alert('El nombre de la actualizacion del docente es requerido');
+			return false;
+		}
+		
+		//if( identif3 == null || identif3.length == 0 ) {
+		//	alert('La identificación de la actualizacion del docente es requerido');
+		//	return false;
+		//}
+
+		if( celu3 == null || celu3.length == 0 ) {
+			alert('El número de Celular de la actualizacion del docente es requerido');
+			return false;
+		}
+		
+		if( jornadas3 == null || jornadas3.length == 0 || ($.trim(jornadas3) == 'Jornada')) {
+			alert('La jornada de la actualizacion es requerido');
+			return false;
+		}
+		
+		if( mater3 == null || mater3.length == 0 || ($.trim(mater3) == 'Materia')) {
+			alert('La materia de la actualizacion es requerida');
+			return false;
+		}
+		
+				
+		$('#tablaMat #'+ide3).parent().next().text(nombredoc3);
+		//$('#tablaMat #'+ide3).parent().next().next().text(identif3);
+		$('#tablaMat #'+ide3).parent().next().next().text(celu3);
+		$('#tablaMat #'+ide3).parent().next().next().next().text(mater3);
+		$('#tablaMat #'+ide3).parent().next().next().next().next().text(jornadas3);
+		
+		
+		$('#edita').hide();
+		$('#botonActualizar').hide();
+		$('#botonCancelar').hide();
+		
+	});
+	
+	$('#botonCancelar').on('click', function(){
+		$('#edita').hide();
+		$('#botonActualizar').hide();
+		$('#botonCancelar').hide();
+	});
+	
+	</script> 
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

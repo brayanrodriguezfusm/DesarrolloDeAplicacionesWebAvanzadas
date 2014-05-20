@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+		div.color{font-family: "Times New Roman", Times, serif; color:white;}
+		span.Tnegrilla{font-weight:bold;}
+		
+	</style>
+
+	<script src="../js/jquery-1.11.0.min.js"></script> 
+	
+  </head>
+<body>
+  
+	<br>
+  
+	<div class="navbar-wrapper">
+      <div class="container">
+		
+		<div class="col-md-9">
+		
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			  <div class="container">
+				<div class="navbar-header">
+				<br>
+				<img src="logoU.jpg"></img>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="">Notas CWW</a>
+				</div>
+				<div class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="horario.html">Horario</a></li>
+						<li><a href="notas.html">Historico de Notas</a></li>
+						<li><a href="listadocursos.html#">Listado de cursos</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="cursos.html">Cursos</a></li>
+						<li><a href="#">Horaios</a></li>
+						<li><a href="#">Profesores</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informacion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+					  	<li><a href="informacion.html">Información</a></li>
+						<li><a href="turno.html">Turno</a></li>
+						<li><a href="reglas.html">Reglas</a></li>
+						<li><a href="electivas.html">Electivas</a></li>
+					  </ul>
+					</li>
+					<li><a href="login.html">Salir</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			
+		</div>
+		<div class="col-md-3">
+		
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<br>
+						<div class="color"> <span class="Tnegrilla">Estudiante:</span> xxxxxxxxxxxxxxxxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Codigo:</span> xxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Programa:</span> xxxxxxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Jornada:</span> xxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Promedio:</span> x.xx </div>
+						<br>		
+					</div>
+				</div>	
+			</div>
+		
+		</div>		
+
+      </div>
+	  
+	  <br>	
+	<div class="container">
+	
+	<div class="row">
+	
+		<div class="col-md-2">		
+		</div>
+		
+		<div class="col-md-8">
+		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Principios de Informatica Forense</h3>
+				</div>
+				<div class="panel-body">
+					En este curso, a través de la herramienta FTK (Forensics ToolKid) se abordarán conceptos sobre cadena de custodia
+					y como obtener, preservar, mantener y analizar evidencia informática involucrada en un evento criminal. Este análisis
+					está compuesto por el estudio de los sistemas de archivos, obtención de imágenes forenses, análisis del registro de
+					windows, desencripción de archivos, ataques a archivos protegidos, revisión de casos, recuperación de información y
+					elaboración de reportes sobre el análisis forense a la evidencia.<br> 
+					<br>
+					<table class="table">
+						<thead>
+						  <tr>
+							<th>Codigo</th>
+							<th>Horario</th>
+							<th>Pre-requisitos</th>
+						  </tr>
+						</thead>
+						<tbody id="tablaMat">
+						  <tr>
+							<td>NA20040</td>
+							<td>
+								Martes 18:30 <br>
+								Jueves 18:30
+							</td>
+							<td>Sistemas Operativos</td>
+						  </tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+			<div class="panel panel-success">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Realidad Aumentada</h3>
+				</div>
+				<div class="panel-body">
+					La tecnología de la realidad aumentada -derivada del área de generación de ambientes virtuales- consiste en el
+					despliegue de elementos virtuales que complementan el entorno físico real a través de dispositivos de captura y
+					reproducción de video, sonido y/o animación digital. De esta manera, la información del ambiente que regularmente
+					se percibe a través de los sentidos, puede ser complementada en tiempo real con fines de comunicación específicos.
+					Las técnicas de realidad aumentada han sido empleadas en diversas aplicaciones (comerciales, educativas,
+					científicas, artísticas) conformando un canal híbrido de comunicación que se utiliza para potenciar la realidad del
+					usuario. El curso pretende poner en práctica las técnicas más frecuentes en el desarrollo de aplicaciones de realidad
+					aumentada para dispositivos fijos y móviles.<br> 
+					<br>
+					<table class="table">
+						<thead>
+						  <tr>
+							<th>Codigo</th>
+							<th>Horario</th>
+							<th>Pre-requisitos</th>
+						  </tr>
+						</thead>
+						<tbody id="tablaMat">
+						  <tr>
+							<td>NA20055</td>
+							<td>
+								Martes 20:00<br>
+								Jueves 20:00
+							</td>
+							<td>Estructuras de Datos II</td>
+						  </tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+			<div class="panel panel-warning">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Minería de Datos</h3>
+				</div>
+				<div class="panel-body">
+					El curso pretende abordar de forma panorámica la teoría y conceptos fundamentales de la Minería de Datos (MD),
+					las principales tareas que aborda (asociación, regresión, clasificación y agrupación) y algunas técnicas/métodos
+					existentes que permiten resolver cada una de estas tareas. Los participantes tendrán la posibilidad de conocer y
+					comprender las técnicas básicas de minería de datos y saber cómo se aplican en problemas concretos de extracción de
+					conocimiento útil para el análisis y la toma de decisiones.<br> 
+					<br>
+					<table class="table">
+						<thead>
+						  <tr>
+							<th>Codigo</th>
+							<th>Horario</th>
+							<th>Pre-requisitos</th>
+						  </tr>
+						</thead>
+						<tbody id="tablaMat">
+						  <tr>
+							<td>NA20056</td>
+							<td>
+								Martes 18:30<br>
+								Jueves 18:30
+							</td>
+							<td>
+								Estructuras de Datos II<br>
+								Sistemas de Bases de datos. 
+							</td>
+						  </tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+			<div class="panel panel-danger">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Desarrollo de Software Seguro</h3>
+				</div>
+				<div class="panel-body">
+					Las aplicaciones y los sistemas computacionales usualmente son desarrollados teniendo en cuenta niveles
+					funcionales. El objetivo del desarrollo seguro de software es unir dentro de los requerimientos funcionales y no
+					funcionales (Calidad), los requerimiento de seguridad (integridad, disponibilidad y confidencialidad), con el fin de
+					orientar las tareas de desarrollo a una alineación completa con los requerimientos actuales de negocio. Hoy en día
+					la seguridad de la información se ha instaurado dentro de las políticas organizacionales, las empresas buscan
+					cuidar su activo más importante que es la información, es por eso que cada día se hace más importante que los
+					desarrolladores tengan la capacidad de generar productos que entreguen funcionalidad, calidad y seguridad.<br> 
+					<br>
+					<table class="table">
+						<thead>
+						  <tr>
+							<th>Codigo</th>
+							<th>Horario</th>
+							<th>Pre-requisitos</th>
+						  </tr>
+						</thead>
+						<tbody id="tablaMat">
+						  <tr>
+							<td>NA20053</td>
+							<td>
+								Lunes 20:00<br>
+								Viernes 20:00
+							</td>
+							<td>Fundamentos de Construcción de Software I</td>
+						  </tr>
+						</tbody>
+					</table> 
+				</div>
+			</div>
+		
+		</div>
+
+		<div class="col-md-2">
+			
+		</div>		
+	
+	</div>
+	
+	</div>	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>

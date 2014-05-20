@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+		div.color{font-family: "Times New Roman", Times, serif; color:white;}
+		span.Tnegrilla{font-weight:bold;}
+		
+	</style>
+
+	<script src="../js/jquery-1.11.0.min.js"></script> 
+	
+  </head>
+  <body>
+  
+	<br>
+  
+	<div class="navbar-wrapper">
+      <div class="container">
+		
+		<div class="col-md-9">
+		
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+			  <div class="container">
+				<div class="navbar-header">
+				<br>
+				<img src="logoU.jpg"></img>
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="">Notas CWW</a>
+				</div>
+				<div class="navbar-collapse collapse">
+				  <ul class="nav navbar-nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consulta <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="horario.html">Horario</a></li>
+						<li><a href="notas.html">Historico de Notas</a></li>
+						<li><a href="listadocursos.html#">Listado de cursos</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administracion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="cursos.html">Cursos</a></li>
+						<li><a href="#">Horaios</a></li>
+						<li><a href="#">Profesores</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informacion <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+					  	<li><a href="informacion.html">Información</a></li>
+						<li><a href="turno.html">Turno</a></li>
+						<li><a href="reglas.html">Reglas</a></li>
+						<li><a href="electivas.html">Electivas</a></li>
+					  </ul>
+					</li>
+					<li><a href="login.html">Salir</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			
+		</div>
+		<div class="col-md-3">
+		
+			<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<br>
+						<div class="color"> <span class="Tnegrilla">Estudiante:</span> xxxxxxxxxxxxxxxxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Codigo:</span> xxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Programa:</span> xxxxxxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Jornada:</span> xxxxxx </div>
+						<div class="color"> <span class="Tnegrilla">Promedio:</span> x.xx </div>
+						<br>		
+					</div>
+				</div>	
+			</div>
+		
+		</div>		
+
+      </div>
+	  
+	  <br>	
+	<div class="container">
+	
+	<div class="row">
+	
+		<div class="col-md-2">		
+		</div>
+		
+		<div class="col-md-8">
+		
+			<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Reglas</h3>
+				</div>
+				<div class="panel-body">
+					Las personas que no cumplan el turno asignado perderan su derecho de ajustar el horario
+					(es decir no podran realizar cambios de seccion). Unicamente se atendera en la facultad
+					a aquellos estudiantes cuyo horario no refleje una carga academica descrita por:
+				</div>
+			</div>
+
+		
+		</div>
+
+		<div class="col-md-2">
+			
+		</div>		
+	
+	</div>
+	
+	</div>
+	
+	<div class="container">
+	
+	<div class="row">
+	
+		<div class="col-md-3">		
+		</div>
+		<div class="col-md-6">		
+			<table class="table">
+				<thead>
+				  <tr>
+					<th>Promedio Ultimo Semestre</th>
+					<th>Diurno # de asignacion</th>
+					<th>Nocturno # de asignacion</th>
+				  </tr>
+				</thead>
+				<tbody id="tablaMat">
+				  <tr>
+					<td>Superior a 3,0</td>
+					<td>6</td>
+					<td>5</td>
+				  </tr>
+				  <tr>
+					<td>Entre 2,4 y 2,99</td>
+					<td>5</td>
+					<td>4</td>
+				  </tr>
+				  <tr>
+					<td>inferior a 2,4</td>
+					<td>4</td>
+					<td>3</td>
+				  </tr>
+				</tbody>
+			</table>	
+		</div>
+		<div class="col-md-3">		
+		</div>
+
+	</div>	
+	<br>
+		<br>
+		<div class="panel panel-info">	
+				<div class="panel-heading">
+					<h3 class="panel-title">Reglas para inscripción de Materias</h3>
+				</div>
+				<div class="panel-body">
+					En esta sección encuentra información relevante para la organización de sus materias en el semestre actual, la interpretación y aplicación correcta de las reglas para cada programa de Ingeniería son fundamentales en la elección adecuada de su horario para el semestre actual, por favor sea cuidadoso al elegir las materias que va a ver, porque en caso de no hacerlo bien, podría suceder que su tiempo en la Universidad se extienda más de lo planeado. Recuerde que seguir su plan de estudios y hacer buenas elecciones le permitirá elegir las materias más atractivas para usted.
+				</div>
+				<br>
+				<div class="panel-heading">
+				<h3 class="panel-title">Ingeniería Industrial</h3>
+				</div>
+				<div class="panel-body">
+					Práctica Empresarial:<br>
+					Las prácticas empresariales puede ser validadas por dos Electivas profesionales. Para poder realizar Práctica Empresarial el estudiante deberá haber finalizado sexto semestre.<br>
+					Si solo va ver práctica Empresarial debe pagar media matrícula. Si desea ver PPA (Proyectos Pedagógicos de Aula) adicionales; debe pagar matrícula completa con lo cual tendrá la siguiente carga: <br>
+					Prácticas Empresarial (Válida por dos electivas Profesionales) y 2 ó máximo 3 PPAs dependiendo del promedio académico.<br>
+					Los estudiantes que deseen realizar esta experiencia durante el próximo semestre 2014-2 deberán realizar todos sus contactos con las empresas durante este. Para esto por favor acercarse a la Dirección de Industrial.<br>
+					Electivas en Humanidades: Sólo puede ser matriculada una Electiva en Humanidades por semestre.<br>
+					Se ofrecen las siguientes asignaturas como electivas profesionales en ingeniería industrial, siempre y cuando cumplan con los prerrequisitos exigidos (Ver electivas): Análisis de decisiones Diseño y distribución de sistemas productivos<br>
+
+				</div>
+				<br>
+				<div class="panel-heading">
+				<h3 class="panel-title">Ingeniería Sistemas</h3>
+				</div>
+				<div class="panel-body">
+					Las personas que tenían que ver Programación Orientada por Objetos deberán ver la asignatura Fundamentos de Construcción de Software II. Para ellos, este PPA (Proyecto Pedagógico de Aula) no vale como electiva profesional.
+				<br>	
+
+					La asignatura Introducción a la Administración no se dictará más en la facultad.
+				<br>	
+					Quienes tienen que ver la asignatura Computación Gráfica verán la asignatura Matemáticas aplicadas a la Ingeniería.
+				<br>	
+					Fundamentos de Construcción de Software I e Ingeniería de Software son la misma asignatura.
+				<br>	
+					Teoría de Lenguajes cambió de nombre a Compiladores.
+				<br>	
+					Se ofrecen las siguientes asignaturas como electivas profesionales en ingeniería de sistemas, siempre y cuando cumplan con los prerrequisitos exigidos:
+				<br>
+ 					Desarrollo de Video Juegos
+ 				<br>	
+					Dispositivos Móviles<br>
+					Realidad Aumentada<br>
+                    Desarrollo de Software Seguro<br>
+					Mineria de datos<br>
+					RUP y UML Aplicados<br>
+					Principios de Informática Forense<br>
+					Modelos de Seguridad de Informática<br>
+					Adicional a las anteriores asignaturas, los estudiantes del plan de estudios antiguo de sistemas pueden ver las siguientes asignaturas como electivas profesionales, siempre y cuando cumplan con los prerequisitos exigidos:<br>
+					Análisis de Sistemas de Información<br>
+					Aplicaciones Orientadas a Internet<br>
+					Seguridad de Sistemas<br>
+					Compiladores<br>
+					Prácticas Empresariales: Las prácticas empresariales puede ser validadas por dos Electivas profesionales; sin embargo se debe cumplir con los requisitos exigidos por la facultad.<br>
+					Si solo va ver práctica Empresarial debe pagar media matrícula<br>
+					Si desea ver PPA (Proyectos Pedagógicos de Aula) adicionales; debe pagar matrícula completa con lo cual tendrá la siguiente carga.<br>
+					Prácticas Empresarial (Válida por dos electivas Profesionales)<br>
+					2 ó máximo 3 PPAs dependiendo del promedio académico.<br>
+				</div>
+				<br>
+				<div class="panel-heading">
+				<h3 class="panel-title">Ingeniería Telecomunicacniones</h3>
+				</div>
+				<div class="panel-body">
+				Electivas en Humanidades: solo puede ser matriculada una Electiva en Humanidades por semestre.<br>
+				Electivas Profesionales: solo puede ser matriculada una Electiva Profesional por semestre.<br>
+				Las Electivas profesionales serán asignadas de la siguiente forma: <br>
+				Procesamiento Digital de Señales: si cursó y aprobó las asignaturas de Análisis de Señales y Microcontroladores.<br>
+				Medios de Transmisión: si cursó y aprobó las asignaturas de Análisis de Señales y Ondas Electromagnéticas.<br>
+				Gestión de Redes: si cursó y aprobó la asignatura de Redes y Transmisión de Datos.<br>
+				Etica: solo podrá ser asignada en 10 semestre.<br>
+				</div>
+				<br>
+		</div>
+	</div>
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>
